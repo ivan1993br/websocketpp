@@ -153,7 +153,7 @@ public:
         lib::error_code ec;
         start_accept(ec);
         if (ec) {
-            throw exception(ec);
+            // throw exception(ec);
         }
     }
 

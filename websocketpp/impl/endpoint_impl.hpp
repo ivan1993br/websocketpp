@@ -107,7 +107,7 @@ template <typename connection, typename config>
 void endpoint<connection,config>::interrupt(connection_hdl hdl) {
     lib::error_code ec;
     interrupt(hdl,ec);
-    if (ec) { throw exception(ec); }
+    // if (ec) { throw exception(ec); }
 }
 
 template <typename connection, typename config>
@@ -123,7 +123,7 @@ template <typename connection, typename config>
 void endpoint<connection,config>::pause_reading(connection_hdl hdl) {
     lib::error_code ec;
     pause_reading(hdl,ec);
-    if (ec) { throw exception(ec); }
+    // if (ec) { throw exception(ec); }
 }
 
 template <typename connection, typename config>
@@ -139,7 +139,7 @@ template <typename connection, typename config>
 void endpoint<connection,config>::resume_reading(connection_hdl hdl) {
     lib::error_code ec;
     resume_reading(hdl,ec);
-    if (ec) { throw exception(ec); }
+    // if (ec) { throw exception(ec); }
 }
 
 template <typename connection, typename config>
@@ -155,7 +155,7 @@ template <typename connection, typename config>
 void endpoint<connection,config>::send_http_response(connection_hdl hdl) {
     lib::error_code ec;
     send_http_response(hdl,ec);
-    if (ec) { throw exception(ec); }
+    // if (ec) { throw exception(ec); }
 }
 
 template <typename connection, typename config>
@@ -174,7 +174,7 @@ void endpoint<connection,config>::send(connection_hdl hdl, std::string const & p
 {
     lib::error_code ec;
     send(hdl,payload,op,ec);
-    if (ec) { throw exception(ec); }
+    // if (ec) { throw exception(ec); }
 }
 
 template <typename connection, typename config>
@@ -192,7 +192,7 @@ void endpoint<connection,config>::send(connection_hdl hdl, void const * payload,
 {
     lib::error_code ec;
     send(hdl,payload,len,op,ec);
-    if (ec) { throw exception(ec); }
+    // if (ec) { throw exception(ec); }
 }
 
 template <typename connection, typename config>
@@ -208,7 +208,7 @@ template <typename connection, typename config>
 void endpoint<connection,config>::send(connection_hdl hdl, message_ptr msg) {
     lib::error_code ec;
     send(hdl,msg,ec);
-    if (ec) { throw exception(ec); }
+    // if (ec) { throw exception(ec); }
 }
 
 template <typename connection, typename config>
@@ -227,7 +227,7 @@ void endpoint<connection,config>::close(connection_hdl hdl, close::status::value
 {
     lib::error_code ec;
     close(hdl,code,reason,ec);
-    if (ec) { throw exception(ec); }
+    // if (ec) { throw exception(ec); }
 }
 
 template <typename connection, typename config>
@@ -244,7 +244,7 @@ void endpoint<connection,config>::ping(connection_hdl hdl, std::string const & p
 {
     lib::error_code ec;
     ping(hdl,payload,ec);
-    if (ec) { throw exception(ec); }
+    // if (ec) { throw exception(ec); }
 }
 
 template <typename connection, typename config>
@@ -261,7 +261,7 @@ void endpoint<connection,config>::pong(connection_hdl hdl, std::string const & p
 {
     lib::error_code ec;
     pong(hdl,payload,ec);
-    if (ec) { throw exception(ec); }
+    // if (ec) { throw exception(ec); }
 }
 
 } // namespace websocketpp

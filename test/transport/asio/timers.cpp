@@ -67,7 +67,7 @@ void run_dummy_server(int port) {
                 break;
             } else if (ec) {
                 // other error
-                throw ec;
+                // throw ec;
             }
         }
     } catch (std::exception & e) {

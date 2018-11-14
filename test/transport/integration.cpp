@@ -234,7 +234,7 @@ void run_dummy_server(int port) {
                 break;
             } else if (ec) {
                 // other error
-                throw ec;
+                // throw ec;
             }
         }
     } catch (std::exception & e) {
@@ -263,7 +263,7 @@ void run_dummy_client(std::string port) {
                 break;
             } else if (ec) {
                 // other error
-                throw ec;
+                // throw ec;
             }
         }
     } catch (std::exception & e) {
